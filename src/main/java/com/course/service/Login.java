@@ -1,8 +1,6 @@
 package com.course.service;
 
-import com.course.pojo.PointObject;
-import com.course.utils.FileUtils;
-import com.course.utils.JsonUtils;
+import com.course.state.ScoreManager;
 
 /**
  * @author lixuy
@@ -11,7 +9,8 @@ import com.course.utils.JsonUtils;
 //类名与方法名须与controller层拦截的方法一致
 public class Login {
 
-    public void testDesign(){
+    public void login(){
+        ScoreManager.handleLogin();
         System.out.println("+++++login积分计算方法执行+++++");
     }
 
