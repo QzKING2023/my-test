@@ -1,8 +1,6 @@
 package com.course.service;
 
-import com.course.pojo.PointObject;
-import com.course.utils.FileUtils;
-import com.course.utils.JsonUtils;
+import com.course.state.ScoreManager;
 
 /**
  * @author lixuy
@@ -12,6 +10,7 @@ import com.course.utils.JsonUtils;
 public class FillInformation {
 
     public void fillInformation(){
+        ScoreManager.handleFillInformation();
         System.out.println("+++++fillInformation积分计算方法执行+++++");
     }
 
